@@ -11,3 +11,31 @@
     text-decoration: none;
     transition: .2s linear;
 }
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    background: white; /* atau warna navbar */
+}
+
+.navbar-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Tengah selalu fix di posisi tengah */
+.nav-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Logo */
+.logo {
+    height: 60px; /* sesuaikan */
+}
+
