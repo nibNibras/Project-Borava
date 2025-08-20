@@ -49,11 +49,11 @@ html {
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(82, 30, 30, 0.2);
     
-    background-color: rgba(56, 28, 17, 0.6); /* → your #381C11 with transparency */
+    background-color: rgba(56, 28, 17, 0.6);
     padding: 0.8rem 2%;
     border-radius: 999px;
 
-    border: .1rem solid rgba(196, 116, 51, 0.3);
+    border: .1rem solid rgb(227, 170, 92, 0.3);
 }
 
 .navbar .navbar-left a,
@@ -73,6 +73,7 @@ html {
 .navbar .navbar-left a:hover,
 .navbar .navbar-right a:hover {
     transform: scale(1.15);
+    color: rgb(227, 170, 92, 0.8);
 }
 
 
@@ -151,20 +152,20 @@ html {
     color: #EADDD7;
     cursor: pointer;
 
-    background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(82, 30, 30, 0.2);
     
-    background-color: rgba(56, 28, 17, 0.6); /* → your #381C11 with transparency */
+    background-color: rgba(56, 28, 17, 0.6);
     padding: 0.8rem 2%;
     border-radius: 999px;
-
     border: .1rem solid rgba(196, 116, 51, 0.3);
 }
 
 .hero .content .cta:hover {
     transform: scale(1.10);
+    background-color: rgba(24, 18, 16, 0.6);
+    color: #E3AA5C;
 }
 
 
@@ -173,14 +174,35 @@ html {
 /* HISTORY */
 .history {
     height: 100vh;
-    background-color: #381C11;
+    background-color: #1E1614;
     display: flex;
     align-items: center;
     cursor: default;
    justify-items: center;
 }
 
-.heading {
+.history .heading {
+    text-align: center;
+    font-size: 2rem;
+    color: #EADDD7;
+    padding: 1.4rem 7%;
+    margin: 0 auto;
+}
+
+
+
+
+/* PLACE */
+.place {
+    height: 100vh;
+    background-color: #1E1614;
+    display: flex;
+    align-items: center;
+    cursor: default;
+   justify-items: center;
+}
+
+.place .heading {
     text-align: center;
     font-size: 2rem;
     color: #EADDD7;
@@ -196,20 +218,119 @@ html {
 
 
 
-
-
-
-
-
-
-
 /* FOOD */
 .food {
-    height: 100vh;
-    display: flex;
+    min-height: 100vh;
+    background-color: #1E1614;
     align-items: center;
-    position: relative;
     cursor: default;
     justify-items: center;
+    padding: 80px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+    display: flex;
+    background-image: linear-gradient(rgba(30,22,20,0.9), rgba(30,22,20,0.9)), url(../assets/bg-batik.png);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
 }
+
+.food::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    
+}
+
+
+.food .heading {
+    text-align: center;
+    font-size: 1.7rem;
+    color: #EADDD7;
+    padding: 1.4rem 7%;
+    margin: 0 auto;
+    margin-left: 70vh;
+    padding-bottom: 1rem;
+}
+
+.food .subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color:#8b6d4b;
+}
+
+.food-cont {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 5rem;
+    justify-content: center;
+    row-gap: 5rem;
+}
+
+.food-card {
+    width: 380px;
+    height: 350px;
+    background-color: #CFB694;
+    border-radius: 20px;
+    padding: 2rem 1.5rem 1.5rem;
+    padding-top: 115px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: visible;
+    text-align: center;
+    gap: 0.5em;
+}
+
+.food-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+.food-card img {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 240px;
+    height: 240px;
+}
+
+.food-card h3 {
+    margin: 1rem 0 0.5rem;
+    color: #3d2a1c;
+    margin-top: 70px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    justify-items: left;
+}
+
+.food-card p {
+    padding: 0 1rem 1.5rem;
+    color: #5a4735;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
