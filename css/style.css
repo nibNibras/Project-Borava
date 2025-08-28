@@ -175,16 +175,16 @@ html {
 .history {
     height: 100vh;
     background-color: #1E1614;
-    display: flex;
     align-items: center;
     cursor: default;
-   justify-items: center;
+    justify-items: center;
+    padding-top: 4rem;
 }
 
 .history .heading {
     text-align: center;
     font-size: 2rem;
-    color: #EADDD7;
+    color: #E3AA5C;
     padding: 1.4rem 7%;
     margin: 0 auto;
 }
@@ -201,7 +201,7 @@ html {
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: auto;
   }
   
@@ -231,16 +231,20 @@ html {
   
   .history-text {
     flex: 1;
-    text-align: center;
+    text-align: left;
     padding: 0 1rem;
-    color: #e4b69e; /* coklat tua */
+    color: #EADDD7;
+  }
+
+  .history-text p {
+    text-indent: 50px;
   }
   
-  .history-text h2 {
+  /* .history-text h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: #ce916b;
-  }
+  } */
   
   .history-text p {
     font-size: 1rem;
@@ -255,7 +259,7 @@ html {
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    color: #8d6047;
+    color: #E3AA5C;
     transition: 0.3s;
   }
   
@@ -277,10 +281,11 @@ html {
 .place {
     height: 100vh;
     background-color: #1E1614;
-    display: flex;
     align-items: center;
     cursor: default;
    justify-items: center;
+   padding-top: 3rem;
+   background-position: top;
 }
 
 .place .heading {
@@ -289,6 +294,8 @@ html {
     color: #EADDD7;
     padding: 1.4rem 7%;
     margin: 0 auto;
+    padding-left: 4rem;
+    padding-bottom: 0;
 }
 
 
@@ -315,6 +322,7 @@ html {
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 50px;
+    max-width: 200vh;
 }
 
 .place-cards-wrapper {
@@ -494,7 +502,7 @@ html {
     background-image: linear-gradient(rgba(30,22,20,0.9), rgba(30,22,20,0.9)), url(../assets/bg-batik.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     position: relative;
 }
 
@@ -512,17 +520,17 @@ html {
 .food .heading {
     text-align: center;
     font-size: 1.7rem;
-    color: #EADDD7;
+    color: #E3AA5C;
     padding: 1.4rem 7%;
     margin: 0 auto;
     margin-left: 70vh;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 }
 
 .food .subtitle {
     font-size: 1rem;
     margin-bottom: 2rem;
-    color:#8b6d4b;
+    color:#EADDD7;
 }
 
 .food-cont {
@@ -536,12 +544,9 @@ html {
 
 .food-card {
     width: 380px;
-    height: 350px;
-    background-color: #CFB694;
-    border-radius: 20px;
+    height: 260px;
     padding: 2rem 1.5rem 1.5rem;
     padding-top: 115px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -549,6 +554,14 @@ html {
     overflow: visible;
     text-align: center;
     gap: 0.5em;
+
+    background: #d2c0a3;
+    border-radius: 16px;
+
+    box-shadow: 0 8px 20px rgba(227, 170, 92, 0.3);
+    transition: all 0.3s ease;
+    flex-direction: column;
+    border: 1px solid rgba(196, 116, 51, 0.2);
 }
 
 .food-card:hover {
@@ -567,17 +580,18 @@ html {
 
 .food-card h3 {
     margin: 1rem 0 0.5rem;
-    color: #3d2a1c;
-    margin-top: 70px;
+    color: #522d1c;
+    margin-top: 80px;
     font-size: 1.5rem;
     font-weight: bold;
     justify-items: left;
 }
 
 .food-card p {
-    padding: 0 1rem 1.5rem;
+    /* padding: 0 1rem 1.5rem;
     color: #5a4735;
-    font-size: 0.9rem;
+    font-size: 0.9rem; */
+    display: none;
 }
 
 
@@ -587,7 +601,7 @@ html {
 
 /* footer */
 .footer {
-    background: #3b2a21;
+    background: #1E1614;
     color: #f5e0c3;
     text-align: center;
     padding: 1rem 2rem;
